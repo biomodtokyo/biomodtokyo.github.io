@@ -1,26 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタイルの確認</title>
     <style>
-        
-        .container {
-            display: flex;
-            justify-content: center; 
-            align-items: center;     
-            height: 100vh;           
-            background-color: lightblue;             
+        body {
+            background-color: lightblue;
         }
-
-        
-        .content {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-     </style>
+    </style>
 </head>
 <body>
-     
+    <h1>GitHub Pagesのスタイル確認</h1>
+    <p>背景色が変更されているか確認してください。</p>
 </body>
 </html>
