@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>スタイルの確認</title>
+    <title>biomod team Tokyo 2025</title>
     <style>
         body {
             background-color: lightblue;
@@ -11,7 +11,12 @@
     </style>
 </head>
 <body>
-    <h1>GitHub Pagesのスタイル確認</h1>
-    <p>背景色が変更されているか確認してください。</p>
+    <div>
+        <a href="home.html">HOME</a>
+        <a href="project.html">PROJECT</a>
+        <a href="expriment.html">EXPRIMENT</a>
+        <a href="result.html">RESULT</a>
+        <a href="elsi.html">ELSI</a>
+    <div>
 </body>
 </html>
