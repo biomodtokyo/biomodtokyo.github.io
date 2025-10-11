@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts | Design | BIOMOD 2025</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/index.html" style="color: #fff; text-decoration: none;">BIOMOD 2025 TEAM TOKYO</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/project/index.html">Project</a></li>
+                    <li><a href="/design/index.html">Design</a></li>
+                    <li><a href="/modeling/index.html">Modeling</a></li>
+                    <li><a href="/experiment/index.html">Experiment</a></li>
+                    <li><a href="/results/index.html">Result</a></li>
+                    <li><a href="/elsi/index.html">ELSI</a></li>
+                    <li><a href="/team/index.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container staged-fadein" style="--delay:200ms;">
+
+        <h2>DNA Sequences Used (List)</h2>
+        <p>Below is the list of DNA strands used in this project. Sequences are written 5' → 3'. Modifications and phosphorothioate markers are indicated where applicable.</p>
+
+        <h3>Legend / Notation</h3>
+        <ul>
+            <li><strong>5- ... -3</strong>: Sequence direction from 5' end to 3' end.</li>
+            <li><strong>[FAM]</strong>: 5' fluorescent label (FAM).</li>
+            <li><strong>*</strong>: Phosphorothioate-modified backbone at the preceding base (used in some bridge oligos).</li>
+            <li><strong>-3'P</strong>: 3' phosphate blocking group.</li>
+        </ul>
+
+        <h3>Core strands</h3>
+        <pre><code>
+st1        5-CACTCTTCTGGATCCAGTTTGTTATCGCAGGAGCGTCGGTATTCAAA-3
+st2        5-CACTCTTCTGGATCCAGTTTGAATACCGACGCCACGACCTAATCTTA-3
+st3        5-CACTCTTCTGGATCCAGTAAGATTAGGTCGTGATGGTGAAATGTAAA-3
+st4        5-CACTCTTCTGGATCCAGTTTACATTTCACCATTCCTGCGATAACAAA-3
+st1[FAM]   5-CTGGATCCAGTTTGTTATCGCAGGAGCGTCGGTATTCAAA[FAM]-3
+
+bridge     5-CTGGATCCAGAAGAGTGTACACTCACTCAGATGAGACAGTGAGTGTAATGCTAGCAT-3
+
+bridge expander 1  5-G*T*GTACACTCAC-AACAGACTCGA-3'P
+bridge expander 2  5-T*C*AGATGAGACA-AACAGACTCGA-3'P
+bridge expander 3  5-G*T*GAGTGTA-AACAGACTCGA-3'P
+
+bridge shrinker 1   5-G*T*GAGTGTACAC-GCATGACTCAT-3'P
+bridge shrinker 2   5-T*G*TCTCATCTGA-GCATGACTCAT-3'P
+bridge shrinker 3   5-T*A*CACTCAC-GCATGACTCAT-3'P
+
+DNA computing
+T1        5-A*A*CAGACTCGA-AACAGACTCGA-3'P
+T2        5-G*C*ATGACTCAT-AACAGACTCGA-3'P
+T3        5-T*T*ACTCGAAACAGACT-GCATGACTCAT-3'P
+T1 (dup)  5-A*A*CAGACTCGA-AACAGACTCGA-3'P
+
+        </code></pre>
+
+        <h3>日本語説明（短め）</h3>
+        <p>上記は本プロジェクトで使用したDNA配列の一覧です。<strong>st1–st4</strong> は主に構造を形成するステープル（staple）鎖、<strong>bridge</strong> 系はゲルの伸長/収縮および接続を担う補助鎖、<strong>T1–T3</strong> はDNAコンピューティング（論理/発振）に使うオリゴです。修飾やブロッキングは配列末端に注記しています。</p>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p style="color:#fff;">&copy; BIOMOD 2025 TEAM TOKYO</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

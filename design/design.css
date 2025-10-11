@@ -1,0 +1,33 @@
+/* --- カードデザイン --- */
+.card-container {
+    display: flex; /* カードを横並びにする */
+    justify-content: space-around; /* カード間のスペースを均等に */
+    flex-wrap: wrap; /* 画面が狭い場合は折り返す */
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* わずかに影をつける */
+    width: 30%;
+    min-width: 250px; /* 最小幅を指定 */
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* 少し浮き上がるような動き */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 a {
+    text-decoration: none;
+    color: #0a192f;
+}
+
+.card h3 a:hover {
+    color: #64ffda;
+}
